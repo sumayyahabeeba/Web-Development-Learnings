@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Entities</title>
+</head>
+
+<body>
+    3>4>5<>6
+        <p>this is a para but the para tags will not be displayed onto the screen. now say for example i want to display
+            on my screen that the syntax for para is "
+        <p></p>" it will not display that hence we use html entities for this purpose</p>
+        this is the syntax for para: &lt;p&gt;&lt;/p&gt;
+        <br>
+        this is the syntax for list: &lt;li&gt;&lt;/li&gt;
+
+        Also we know that html ignores the extra new lines and spaces. hence to print something as it is along with the
+        new lines and spaces we use pre tag
+        <pre>
+        Hi
+
+        I am in third line
+
+        And                 I have a lot of empty space in my fifth line
+    </pre>
+        <!-- similarly, if you want a few spaces to be counted, then go with &nbsp; -->
+        <div>
+            copyright &copy; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUMAYYA HABEEBA
+        </div>
+        <blockquote cite="source-url">
+            QUOTATION TAG HELPS THE SEARCH ENGINES UNDERSTAND THAT YOU HAVE GIVEN A QUOTATION HERE 
+        </blockquote>
+        <q cite="source-url">similarly this can be used as well, for QUOTATION</q>
+        <!--  to have the black code boxes in your webpage use code tag and to write multiline code we use code tag within the pre tag so as to keep the new lines intact. as of now you will get the code alone and the black box can be later obtained using react and prism.js library-->
+        <h3>This is html boilerplate code</h3>
+        <pre>
+        <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </code>
+        </pre>
+        <!-- shift + tab reduces on indent in the selected lines-->
+</body>
+
+</html>

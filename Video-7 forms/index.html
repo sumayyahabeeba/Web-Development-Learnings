@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Let's Learn it</title>
+</head>
+
+<body>
+    <h1>SDE Application</h1>
+    <form method="post" action="/submit.php">
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required pattern="[0-9]+">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes" >
+            <label for="subscribe">subscribe to my channel</label>
+        </div>
+        <div>
+            <label for="comment">Leave a comment</label>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="states">Select your State: </label>
+            <select name="states" id="states">
+                <option value="Telangana">Telangana</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Kashmir">Kashmir</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
