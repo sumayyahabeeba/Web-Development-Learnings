@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* html is the root of all the elements and rem units will inherit from the root element */
+    font-size: 12px;
+}
+.box{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1533px; */
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+    /* vw = View port width */
+    /* margin-auto will create equal margins on both sides hence the box will be centered. Remember that this applies only to the BLOCK elements */
+    background-color: rgb(156, 228, 228);
+}
+.container{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 80vw;
+    /* height: 80vh; */
+    min-height: 80vh; 
+    /* to maintain a min height of the main of your webpage irrespective of whether content is there or not. same goes for min-width also*/
+    margin: 23px auto;
+    font-size: 18px; 
+    /* if I Don't specify this the 2em for para will be 24px how?? because the root html has 12px and hence every element will get 12px so para ko will get  2*12 = 24 for 2em as simple as that */
+    /* default font size is 24px so the p will get 48px for 2em */
+    background-color: rgb(156, 228, 228);
+}
+.container div{
+    /* font-size: 2em; */
+    /* the font-size of paragraph inherited the font-size of the container and was = 18px for 1em and 27px for 1.5em and 36px for 2em. Jitna isko milne wala tha uska double for 2em*/
+    font-size: 2rem;
+    /* 2 rem means 2*the size of root element, so 24px for 2rem in this case. Jitna iske root ko mila uska double for 2rem**/
+    border: solid 2px rgb(242, 244, 242);
+    width: 50%;
+    /* % will take the percent value w.r.t it's parent size. so a commom mistake in this is that we specify a size while the size of the parent is not specified at all. so avoid using % in most of the cases rather use vh and vw. Use the % only if you know that the parents size is set already */
+}
+.container div div{
+    border: 2px solid blueviolet;
+    width: 50%;
+}
+
+/* We know that in mobiles the width is less and height is more and in laptops the case is opposite so Vmin in phone is width and Vmax in phone is height and Vmin in laptop is height while Vmax is width */
+/* 100Vmin mean 100*Vmin of the screen you are in, it can be width or height based on the device you are in */
+.mycont{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 23px auto ;
+    color: rgb(3, 3, 3);
+    font-size: 22px;
+    /* width: 100vmin; */
+    width: 80vw;
+}

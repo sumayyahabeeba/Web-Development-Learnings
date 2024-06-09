@@ -1,0 +1,28 @@
+/* to make a nav bar we need to remove the marker of a list so to do that we use list-style: none */
+nav ul li{
+    list-style: devanagari;
+     /* it gives 1,2,3 in hindi */
+
+     /* to set emojis  */
+    list-style-type: "🔥";
+   
+    /* list-style: none; */
+    background-color: aquamarine;
+    /* the color applies to the list content only and not it's marker */
+    /* to push the marker inside the backround color then use list-style-position: inside;  */
+    /* list-style-position: inside; */
+    border: 2px solid black;
+    /* list-style: disc inside  url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    /* we use either disc for just dot or and image in the place of a marker */
+    /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    /* to replace the marker with an image we use list style image*/
+    list-style: none;
+    padding: 23px;
+}
+
+/* in inspect tool: if we add any css to the "element-style" then it is added as the inline css to that particular element. Also remember that changes made in the inspect tool will be temporary and are used just for preview but to make them permanent we need to copy those styles and paste them in our code here */
+
+ul{
+    display: flex;
+    /* to align them horizontally we apply display flex to the "container of our list" and not on the list remember that */
+}

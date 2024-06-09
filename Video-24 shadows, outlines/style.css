@@ -1,0 +1,16 @@
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    /* Syntax of the box shadow is "box-shadow: h-offset v-offset blur spread color inset;" */
+    box-shadow:5px 15px 5px #a9ee92;
+}
+.text{
+    /* sytax of the text shadow is "text-shadow: h-offset v-offset blur color;" In this we don't have inset i.e shadow from inside the box and spread option*/ 
+    text-shadow: 2px 2px 4px #e0c21a;
+    outline: 2px solid black;
+    border: 2px solid palevioletred;
+    outline-offset: 9px;
+    /* Outline and border look same but they do have a few differences. Outline is applied outside the border. and Border is a part of box-model while outline is not. And Outline has an offset propety that determines the space of the outline and can be changed as per the requirements. Width of an outline cannot change as they have uniform width*/
+    border-radius: 34px;
+    /* NOTE: outline cannot be curved directly instead it follows the border, eg: if the border is curved then the outline will also get the curvy edges */
+}

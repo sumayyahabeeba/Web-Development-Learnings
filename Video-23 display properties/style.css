@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid blue;
+    display: inline-block;
+    /* when we give padding and margin to the "display: inline" then padding and margin were not applied from top. So to get the padding and margin from all the 4 sides we need to make "display: insline-block". even width can be set only through this */
+    width: 344px;
+    padding: 45px;
+    margin: 34px ;
+    /* display: none; */
+}
+.box1{
+    /* display: none; */
+    /* this will remove both the box and the space it was occupying */
+    /* visibility: hidden; */
+    /* this will remove only the box and not the space it was occupying */
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display --> */

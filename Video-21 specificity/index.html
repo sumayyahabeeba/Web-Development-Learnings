@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* NOTE: If we have different selectors together making it complex then we only need to add all the specificities to get the final highest specificity and that only will be applied */
+        /* specificity of (element selector = 1) + (class selector = 10) total =11*/
+        h1.cred {
+            color: rgb(179, 110, 243);
+        }
+
+        /* specificity of element selector = 1 */
+        h1 {
+            color: aquamarine;
+        }
+
+        /* specificity of class selector = 10 */
+        .yellow {
+            color: yellowgreen;
+        }
+
+        /* specificity of class selector = 10 */
+        .cpurple {
+            color: purple
+        }
+
+        /* specificity of class selector = 10 and here position is considered to decide which will be applied hence,which is written last will be applied */
+        .cred {
+            color: rgb(230, 96, 96)
+        }
+
+        /* specificity of attribute selector = 10 */
+        [data-x=a] {
+            background-color: rgb(78, 4, 60);
+        }
+
+        /* h1 {
+            color: rgb(222, 163, 95) !important;
+            /* this will be applied at any cost only because of the "important" keyword */
+        h1#iden{
+            color: rgb(150, 214, 117);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow cred cpurple" data-x="a"  id="iden">CSS Specificity</h1>
+    <!-- here data-x is an attribute selector -->
+    <!-- Priority of the styles: !important(10,000) > inline style(1000) > id selector(100) > class or attributre(10) > element selector or pseudo selector(1)  > universal selector(0) -->
+    <h2 style="color: blueviolet;"> Hi I am using the important keyword that will overwrite even the inline style</h2>
+    <!-- TIP: always use the least specificity selector so that it can be overwritten easily -->
+
+    <!-- QUICK QUIZ -->
+    <!-- a.harryclass.rohan-class[href]:hover {
+        color: blueviolet;
+    } -->
+    <!-- FIND THE SPECIFICITY? -->
+    <!-- my SOLUTION: a(element)(1) + harryclass(class)(10) + rohan(class)(10) + class[href](attribute)(10) + hover(pseudo)(10) = 41 my answer is correct-->
+
+    <!-- IMPORTANT TIP: never leave a confusing css code to the reader. be specific in your choice and avoid overwriting the style for the same code over and over again. make your css code simple, specific with least lines of code. for this it's better NOT to use !important, and inline styles -->
+</body>
+
+</html>
