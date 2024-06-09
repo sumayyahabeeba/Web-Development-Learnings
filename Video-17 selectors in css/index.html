@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*ELEMENT SELECTOR*/
+        /* div{
+            background-color: red;
+        } */
+
+        /* CLASS SELECTOR */
+        .ILikeRed{
+            background-color: red;
+        }
+
+        /* ID SELECTOR */
+        #green{
+            background-color: greenyellow;
+        }
+
+        /* CHILD SELECTOR: the child must be direct child eg: p within div is ok but this won't apply for p within article within div */
+        div > p{
+            color: blueviolet;
+             background-color: aquamarine;
+        }
+
+        /* DESCENDANT SELECTOR: here it can be any child and it will still be valid */
+        span p{
+            color: rgb(98, 98, 7);
+             background-color: aquamarine;
+        }
+
+        /* UNIVERSAL SELECTOR: STAR MEANS APPLY TO ALL THE ELEMENTS */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* PSEUDO SELECTOR */
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: goldenrod;
+        }
+        a:active{
+            background-color: rgb(188, 246, 246);
+        }
+        a:hover{
+            background-color: rgb(246, 246, 158);
+        }
+        p:first-child{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!--  CLASS SELECTOR usecase -->
+    <div class="ILikeRed">I am a div!</div>
+    <!-- ID SELECTOR usecase -->
+    <div id="green"> I am also a div!!!</div>
+    <!--CHILD SELECTOR INVALID usecase -->
+    <div><article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in iusto dolore optio nesciunt rem ratione at magni et qui id corporis temporibus suscipit facere, labore sed harum quaerat illum?</p></article></div>
+    <!-- CHILD SELECTOR VALID usecase -->
+    <div>
+        <p>Lorem ipsum Dolor, sit amet consectetur adipisicing elit. Ab, provident itaque. Facilis, culpa perferendis! Aspernatur, voluptatem quaerat? Nulla, dolores error.</p>
+    </div>
+    <!-- DESCENDANT SELECTOR usecase -->
+    <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium tempora eos quisquam repellat quis esse ducimus autem cumque recusandae incidunt?
+    </p></span>
+    <!-- PSEUDO SELECTOR usecases  -->
+    <a href="https:/google.com">Go to Google</a>
+    <a href="https:/facebook.com">Go to Facebook</a>
+    <a href="https:/youtube.com">Go to Youtube</a>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>
