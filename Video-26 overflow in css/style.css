@@ -1,0 +1,29 @@
+.box{
+    width: 20vw;
+    /* 40% of the viewport width */
+    height: 20vh;
+    /* 40% of the viewport height */
+    border: 2px solid black ;
+    overflow: auto;
+    overflow-x: hidden;
+    /* no horizantal scrolling */
+    overflow-y: scroll;
+    /* only vertical scrolling */
+    /* short hand for this is "overflow: overflow-xValue overflow-yValue " */
+    /* overflow: clip; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    /* note that ellipsis is applied in text-overflow not in overflow */
+
+}
+/* Here we see that the content is bigger than the border causing an overflow so to fix this there are 2 ways */
+/* 1. one is we can add a scroll bar using overflow:scroll. This will add a scroll bar even if the content has not overflown so to fix this we can  use overflow:auto this will bring a scroll bar only when the content overflows*/
+/* to activate the horizontal scroll bar only we use white-space : nowrap */
+
+/* along with the scroll bar we can simply add 3 (ellipses) like this "text-overflow: ellipses" but here there's no point of having the scroll bar so remove it. because the overflown text is anyway displayed as 3 dots*/
+/* use overflow: hidden; to only have ellipsis but no scroll bar */
+/* The difference between clip and hidden is that the clip keyword also forbids all scrolling, including programmatic scrolling */
+
+/* to control the overflow individually w.r.t. height and width we use overflow-x and overflow-y */
+
+/* using overflow: auto; is recommended for convinience  */

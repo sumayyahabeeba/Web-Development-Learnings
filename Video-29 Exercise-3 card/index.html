@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS CARD EXERCISE-3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+        .card{
+            border: 4px solid grey ;
+            width: 300PX;
+            border-radius: 15px;
+            margin: auto;
+            box-shadow: 10px 10px 10px #60685d;
+        }
+        .image{
+            padding: 4px;
+        }
+        .image img{
+            box-sizing: border-box;
+            width: 290px;
+            height: 200px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        span{
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 15px;
+            color: grey ;
+        }
+        h2{
+            font-family: "Poetsen One", sans-serif;
+            margin: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: rgb(78, 128, 123);
+        }
+        p{
+            margin: 10px;
+            text-justify: auto;
+            color: grey;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .but button{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            color: rgb(134, 134, 222);
+            border: none;
+            background-color: rgb(219, 227, 241);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .but{
+            text-align: center;
+        }
+        .but button:hover{
+            background-color: rgb(194, 225, 246);
+            color: rgb(10, 136, 214);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxMD__5ZMBjY_k7iSqM13KAKWaHIYsPHEBw&s" alt="Image Not Found">
+        </div>
+        <div>
+            <span> HarryBhai </span> 
+            <span> BestCourse</span>
+        </div>
+        <h2>SIGMA BATCH OP!</h2>
+        <p>The Most Premium Web Development Course on Earth is Sigma Web Development course</p>
+        <div class="but"><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"><button>Read More</button></a></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+/* global variable */
+:root{
+    --color: rgb(170, 213, 229);
+    --seccolor: rgb(5, 180, 209);
+    --defop: 0.5;
+    --pad: 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+.container{
+    background-color: var(--seccolor, red);
+    /* if seccolor is not found then the fallback color so mentioned will be applied */
+}
+ul{
+    display: flex;
+}
+ul li{
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--pad);
+    border: 4px solid var(--seccolor);
+}
+ul li:first-child{
+    --color: rgb(248, 154, 248);
+    background-color: var(--color);
+}
