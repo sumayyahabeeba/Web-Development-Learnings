@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep dive into CSS Selectors</title>
+    <style>
+        /* if box is the first child of it's parent then this css will be applied */
+        /* here we don't use ".boxes:first-child" because the css will then be applied to the entire 3 divs why?? because boxes is the first child of its parent i.e body*/
+        /* .box:first-child{
+            background-color: palegreen;
+        }
+        .box::first-line{
+            color: rgb(120, 2, 120);
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid purple;
+        }
+        p,a,.box,[data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: palevioletred;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: aquamarine
+        } */
+        /* below are the PSEUDO ELEMENTS! */
+        /* .boxes::after{
+            content: "Sony is a Good Girl!!";
+            background-color: aquamarine;
+        }
+        .boxes::before{
+            content: "Henry is a Very good student";
+            color: blueviolet;
+        } */
+        /* using this we can dynamically insert an element through css and can be styled right there  */
+
+        ::selection{
+            background-color: rgb(11, 22, 22);
+            color: rgb(184, 160, 221);
+        }
+
+        .box::first-letter{
+            color: peru ;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: gray
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a BOX lorem455 </div>
+        <div class="box">Hey I am a BOX </div>
+        <div class="box">Hey I am a BOX </div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        :root{
+            --color: rgb(250, 205, 212);
+            --seccolor : rgb(103, 249, 239);
+            --shadcolor : palevioletred;
+            --borcolor : purple;
+            --defpad : 15px;
+            --mar : 0 20px 0 20px;
+            --bordius : 20px;
+            --ffam : "Poppins", sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            background-color: var(--color);
+            list-style: none;
+            padding: var(--defpad); 
+            border: 3px solid var(--borcolor);
+            box-shadow:8px 8px 10px var(--shadcolor);
+            margin: 20px;
+            border-radius: var(--bordius);
+            font-family: var(--ffam);
+            font-weight: bold;
+            color: rgb(155, 5, 117);
+        }
+        nav{
+            background-color: aquamarine;
+        }
+        nav ul{
+            display: flex;
+        }
+        main p{
+            background-color: var(--seccolor);
+            margin: var(--mar);
+            border: 3px solid var(--borcolor);
+            box-shadow:8px 8px 10px var(--shadcolor);
+            border-radius: var(--bordius);
+            overflow: auto;
+            padding: var(--defpad);
+            font-size: 20px;
+            font-family: var(--ffam);
+        }
+        .videos{
+            border: 3px solid var(--borcolor);
+            margin: var(--mar);
+            border-radius: var(--bordius);
+            box-shadow:8px 8px 10px var(--shadcolor);
+            /* overwritten color variable */
+            --color: rgb(184, 243, 116);
+            background-color: var(--color);
+        }
+        .videos iframe{
+            margin: 10px;
+            border-radius: var(--bordius);
+        }
+        footer{
+            border: 3px solid var(--borcolor);
+            margin: var(--mar);
+            border-radius: var(--bordius);
+            box-shadow:8px 8px 10px var(--shadcolor);
+            background-color: var(--color);
+        }
+        footer ul{
+            margin: var(--mar);
+            list-style-type: "🔥";
+            list-style-position: inside;
+            font-family: var(--ffam);
+        }
+        footer h3{
+            margin: var(--mar);
+            font-family: var(--ffam);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Login</li>
+                <li>SignUp</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="videos">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=GDGHdHZK4ZSQD-aH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </center>  
+        </div>
+        <pre> 
+            <p>Welcome to the Sigma Web Development Course - Web Development Tutorials in Hindi playlist! 🗿
+
+📚 About this Playlist:
+Are you interested in learning web development but find most tutorials in English hard to follow? Look no further! This course is entirely in Hindi and is designed to take you from beginner to pro, one step at a time.
+
+👨‍💻 Who is this for?
+
+Beginners who want to dive into web development
+Intermediate developers looking to sharpen their skills
+Anyone who prefers learning in Hindi
+🛠️ What Will You Learn?
+
+HTML, CSS, and JavaScript Basics
+Front-end and Back-end Development
+Database Integration
+Real-world Projects
+And much more!
+🔥 Quality Assurance:
+Rest assured, we've poured our hearts into creating high-quality tutorials for you. The best part? It's absolutely FREE and without any sponsors!
+
+📅 Schedule:
+New videos will be added almost daily, so make sure to subscribe and hit the notification bell 🔔 to stay updated!
+            </p>
+        </pre>
+    </main>
+    <footer>
+        <h3>Follow Me On Social Media</h3>
+        <ul>
+            <li>
+                <a href="https://www.codewithharry.com">Website</a> 
+            </li>
+            <li>
+                <a href="https://www.facebook.com/CodeWithHarry">Facebook</a>  
+            </li>
+            <li>
+                <a href="https://www.instagram.com/codewithharry">Instagram </a>
+                 
+            </li> 
+            <li>
+                harry@codewithharry.com 
+            </li>  
+        </ul>
+    </footer>
+</body>
+</html>

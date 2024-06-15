@@ -1,0 +1,34 @@
+body{
+    background-color: plum;
+}
+@media screen and (orientation: landscape){
+    body{
+        border: 2px solid rgb(7, 9, 3);
+    }
+}
+/* this style will apply when the orientation is landscape */
+@media only screen and (max-width: 455px){
+    body{
+        background-color: aquamarine;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+/* this style will apply only if the max-width is < 455px and vice versa for min-width* /
+
+/* Syntax: @media not|only mediatype and 
+{
+    (expressions) CSS-Code; 
+} */
+
+.boxes{
+    display: flex;
+}
+.box{
+    width: 344px;
+    height: 344px;
+    background-color: rgb(198, 216, 142);
+    padding: 3px;
+    margin: 3px;
+}

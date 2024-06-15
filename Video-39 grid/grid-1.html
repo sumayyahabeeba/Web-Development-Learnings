@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        /* pro-tip: use gap instead of padding when dealing with flexbox or grid. also we won't get any space between the container and the item unlike padding*/
+        /* first-way to use grid */
+        .container{
+            height: 100vh;
+            width: 80vw;
+            border: 2px solid rgb(35, 4, 120);
+            /* unlike display flex, the elements are not aligned horizontally instead inspect tool shows that you only have rows and no columns. but using the other grid properties we can define the no.of rows and columns we want */
+            display: grid;
+            grid-template-columns: [pehla] 100px [dusra] 150px [teesra];
+            /* this gives 2 columns of the specified width*/
+            /* speciality of grid is that we can place any element anywhere we wish to */
+
+            /* notes: 
+            1. grid cell = one dabba in the grid 
+            2. grid line = any one border line in the grid
+            3. grid track = area enclosed between any 2 but 2 two grid lines eg. one row or one column
+            4. grid area = area enclosed in more than 2 grid lines horizontally and vertically */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns:1fr 1fr 1fr; */
+            /* instead of repeatedly writing the same thing we can use repeat function like this */
+            grid-template-columns: repeat(3,1fr);
+            /* minmax function is used anywhere but here we use it as the second argument of repeat function to tell that min is 100px and max is 1fr */
+            grid-template-columns: repeat(3,minmax(100px,1fr));
+            /* fr means fraction 1fr means it will take one fraction of the available width(when dealing with columns)*/
+            /* gap: 30px; */
+            row-gap: 10px;
+            column-gap: 20px;  
+            /* justify-items and align-items are used to place items within the cells of the grid accordingly */
+            justify-items: center;
+            align-items: center;
+            /* when to use justify-content? use it when the size(width) of the container is bigger than the grid within it. same thing applies for align-content(height of container > height of grid)*/
+            place-content: center;
+            /* using this both justify-content and aling-content is centered */
+        } 
+        .items{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px; 
+        }
+        /* .item-4{
+            grid-row: 1/2;
+            /* grid-column: 1/2; */
+            /* 1/2 means starts from 1 and goes upto 2 
+            grid-column: pehla/teesra;
+        }
+        .item-1{
+            /* grid-row: 1/2; */
+            /* first-way */
+            /* grid-column: 1/2; */
+            /* you can also write this as the meaning remains the same */
+            /* second-way 
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }*/
+        /* the properties specified for items will be acting w.r.t that cell only */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>
+

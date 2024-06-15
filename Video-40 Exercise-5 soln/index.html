@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-5 Solution</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: pink;
+            height: 80px;
+        }
+
+        main {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgb(152, 243, 88);
+            margin: 12px 20px;
+            padding: 10px 23px;
+            /* this means margin-top,bottom = 12px and left-right-margin=34px */
+            /* height: 233px; */
+            /* to display the above properties we specified the height, but now that we have to insert 2 boxes within this container we commented out the height so that the boxes will allow the container to grow in height accordingly */
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: palevioletred;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 10px 15px;
+        }
+
+        .box2 {
+            background-color: aqua;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            /* best way is to use display:flex but without flex we can use it this way */
+            margin: 10px 15px;
+        }
+
+        .textbox {
+            padding: 34px;
+            border: 2px solid white;
+            margin: 50px 34vw;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        footer {
+            height: 150px;
+            background-color: plum;
+        }
+
+        .logo {
+            height: 32px;
+            width: 32px;
+            background: blue;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="textbox">
+            <p>WELCOME TO THE SIGMA WEB DEVELOPMENT COURSE</p>
+        </div>
+        <div class="logo">
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

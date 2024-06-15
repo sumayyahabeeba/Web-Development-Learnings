@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    padding: 45px;
+    display: flex;
+}
+.card{
+    background-color: white;
+    width: 344px;
+    /* height: 544px; */
+    border-radius: 7px;
+    padding: 0 0 34px 0;
+    margin: 4px;
+
+}
+.image{
+    padding: 5px;
+}
+.image img{
+    border-radius: 7px;
+    /* padding-bottom: 10px; */
+    /* if we want our image to be curved from all 4 sides then don't use padding bottom */
+}
+.content{
+    padding: 7px 13px;
+}
+.capsules{
+    padding: 0 28px 0 14px;
+
+}
+.capsules span{
+    border: 1px solid rgb(196, 190, 190);
+    padding: 2px 10px 3px ;
+    /* syntax: padding: top right bottom left */
+    border-radius: 10px;
+    color: rgb(95, 94, 94);
+}
+.content p{
+    padding: 10px;
+    color: gray;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(69, 69, 240);
+    background-color: rgb(216, 216, 246);
+    margin-top: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: rgb(194, 225, 246);
+    color: rgb(10, 136, 214);
+}
+

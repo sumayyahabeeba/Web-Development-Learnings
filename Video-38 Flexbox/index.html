@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid rgb(94, 155, 3); 
+            display: flex;
+            /* display flex is always written in the parent container. and display flex means that we have enabled the flexbox properties */
+            height: 80vh;
+            /* justify-content: center; */
+            /* centers along the main axis */
+            align-items: center;
+            /* centers along the main axis only. and used when there is a single line of elements*/
+            flex-direction: row;
+            /* and the direction of main axis is determined based on the flex direction */
+            /* flex-wrap: wrap; */
+            /* when the elements start to overflow the container,we use flex-wrap so that the extra elements align themselves wihtin the container. this also helps the website to view the contents in moblile with limited space    */
+            /* align-content: center; */
+            /* aligns all the lines of elements to center. mostly used when there are multiple lines formed due to flex-wrap: wrap */
+            /* align-content: flex-start; */
+            /* there is no justify-items property in flexbox */
+            /* flex-flow: row wrap; */
+            /* Syntax: flex-flow: <'flex-direction'> || <'flex-wrap'> */
+            /* gap: 30px;  for both row and column*/
+            /* row-gap: 50px;
+            column-gap: 50px; 
+            shorthand: gap: row-gap col-gap 
+            eg: gap: 10px 50px;*/
+            gap: 10px 12px;
+        .items{
+            /* default flex-grow=0 */
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: rgb(181, 141, 220) ;
+        }
+        .item1{
+            /* just three properties for items: flex-grow/flex-shrink (hardly ever used), and align-self (self explanatory with the self keyword) to align individual item */
+            /* flex-grow: 2; */
+            /* item1 takes the place of 2 elements */
+            /* flex-shrink: 2; */
+            /* shrinks only if it is required to and 2 means that it can shrink upto half */
+            align-self: flex-end ;
+            /* works on that one element on which it is applied */
+        }
+        /* notes: 1. main axis is the axis along which the elements are layed and Cross axis is the axis perpendicular to the main axis
+        2. main axis and cross axis change when the flex direction is changed
+        3. align-items and justify-content works along the direction of main axis
+        4. main-start and main-end is where the main axis starts and ends respectively same goes for cross-start and cross-end 
+        5. size of main axis is main size and the size of cross axis is cross axis
+        
+        common mistake: we place the item properties in container and vice versa this creates chaos so remember all the properties of items as they are very few compared to the container properties*/
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order:2 ;
+        }
+        .order-3{
+            order: 300;
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items order-1">400</div>
+            <div class="items">5</div>
+            <div class="items order-3">11</div>
+            <!-- jiska order sabse zyada wo sabse end me aayega and default order = 0-->
+        </div>
+    </main>
+</body>
+</html>

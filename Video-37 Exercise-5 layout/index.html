@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-5 Layout</title>
+    <style>
+        /* Nav bar styles */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav ul{
+            display: flex;
+            background-color: rgb(243, 131, 243);
+        }
+        nav ul li{
+            list-style: none;
+            margin: 20px;
+            padding: 5px;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: purple;
+            color: white;
+        }
+        /* Main styles */
+        main span{
+            display: flex ;
+        }
+        main span p{
+            border: 2px solid black;
+            padding: 5px;
+            margin: 20px;
+            font-size: x-large;
+            overflow: auto;
+        }
+        main .box1 p{
+            background-color: rgb(183, 250, 117);
+        }
+        main .box2 p{
+            background-color: rgb(246, 251, 109);
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50%;
+            box-sizing: border-box;
+            border: 2px solid purple;
+            background-color: rgb(146, 143, 240);
+        }
+        .box1{
+            height: 50vh;
+            width: 40vw;
+        }
+        .box2{
+            height: 50vh;
+            width: 40vw;
+        }
+        main div h2{
+            font-size:xx-large;
+            padding: 50px;
+            margin: 30px;
+            border-radius: 30px;
+            border: 2px solid rgb(199, 13, 199);
+            text-align: center;
+            box-shadow: 5px 5px 15px 5px rgb(230, 149, 230);
+            background-color: purple;
+            color: white;
+            font-style: italic;
+        }
+        /* footer styles */
+        footer{
+            border: 2px solid purple;
+            padding: 5px;
+            /* margin: 10px; */
+            width: 100%;
+            background-color: rgb(224, 245, 119);
+        }
+        footer h4{
+            padding: 5px;
+            text-decoration: underline;
+        }
+        footer ul li{
+            list-style: none;
+            padding: 5px;
+        }
+        .logo{
+            right: 0;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a target="_blank" href="https://www.codewithharry.com/">
+                    <li>HOME</li>
+                </a>
+                <a target="_blank" href="https://www.codewithharry.com/blog/">
+                    <li>BLOGS</li>
+                </a>
+                <a target="_blank" href="https://www.codewithharry.com/videos/">
+                    <li>COURSES</li>
+                </a>
+                <a target="_blank" href="https://www.codewithharry.com/notes/">
+                    <li>NOTES</li>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww">
+                    <li>ABOUT US</li>
+                </a>
+                <a target="_blank" href="https://www.codewithharry.com/login/">
+                    <li>LOG OUT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <span class="box1">
+                <p>Welcome to CodeWithHarry
+                    Learn C,C++, Python, Java, DSA, Data Science, Full Stack Development. Confused on which course to
+                    take? I have got you covered. Browse courses and find out the best course for you. Its free! Code
+                    With Harry is my attempt to teach basics and those coding techniques to people in short time which
+                    took me ages to learn. I don't have words to thank this man, I'm really grateful to have this
+                    channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and
+                    can put your time into his content. I can assure you that it'll be worth it.
+
+
+                </p>
+            </span>
+            <span class="box2">
+                <p>
+                    Code With Harry is my attempt to teach basics and those coding techniques to people in short time
+                    which took me ages to learn.
+                    At Code With Harry, I provide a quick and to the point demo along with resources of anything and
+                    everything I teach. Source code and other resources are hosted on my website CodeWithHarry.com. I
+                    provide source code(if any) in the description of every video.
+                    Quality programming videos in Hindi
+                    Business enquiries: harry@codewithharry.com
+                </p>
+            </span>
+        </div>
+            <div>
+                <h2>
+                    WELCOME TO SIGMA WEB DEVELOPMENT EXPRESS, ZERO TO HERO PREMIUM COURSE EVER MADE!
+                </h2>
+            </div>
+    </main>
+    <footer>
+        <h4>CONTACT US</h4>
+        <ul>
+            <li>
+                <a href="https://www.codewithharry.com">Website</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/CodeWithHarry">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/codewithharry">Instagram </a>
+            </li>
+            <li>
+                harry@codewithharry.com
+            </li>
+            <li>Copyright © 2024 CodeWithHarry.com</li>
+        </ul>
+        <div class="logo"><img width="60px" src="https://www.codewithharry.com/img/logo-blue.png" alt=""></div>
+    </footer>
+</body>
+</html>

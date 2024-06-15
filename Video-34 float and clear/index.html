@@ -1,0 +1,38 @@
+<!-- Desclaimer: Don't use any of these as they might create confusion and are also outdated. instead use grid and flex properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border : 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: left;
+            /* specifies the side on which it can float */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+            /* specifies the sides on which it cannot allow any overflow, that means it takes all the place on the mentioned side without allowing the other elements to accomadate. */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=2048x2048&w=is&k=20&c=fSG5LG9kxLNzjG9_YI1bXdz3-gD7UW2e2bd9arD5Vm8=" alt="" width="290">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, distinctio alias. Ratione, maxime, enim quaerat beatae culpa totam eaque quod quisquam distinctio eveniet, nostrum quae repellat dolore corrupti necessitatibus recusandae. Fugiat cum itaque pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. ue cum magni eligendi possimus saepe ex deleniti!</p>
+        </div>
+        <div class="card">CARD-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo natus nisi error rem tempora est fugiat eos as unde debitis corporis eos asperiores dolorem consequuntur eveniet ratione sed, architecto fugit obcaecati natus quo culpa adipisci voluptate. Sapiente voluptatem tenetur repellat ratione explicabo culpa, consequatur impedit iusto possimus quasi voluptatibus laboriosam eum nemo pariatur repellendus, omnis aliquam excepturi atque fugit sunt esse! Nemo commodi nulla dignissimos delectus quis. Quia et totam, id excepturi cum suscipit fuga unde iure a expedita? Vero accusantium voluptas porro explicabo corrupti vel temporibus molestiae blanditiis, fugit exercitationem iste reprehenderit distinctio at praesentium tenetur! Quam itaque velit facere voluptatem, odit numquam asperiores dolor totam tenetur dignissimos ipsa minus blanditiis neque nemo architecto voluptatum necessitatibus animi libero? Doloremque corporis nemo a possimus maiores adipisci sint quae nostrum voluptatem officia cum ex sapiente atque nobis consequatur numquam odio facilis dolores, non dicta totam sit assumenda! Quisquam sit quis, quaerat suscipit dolor excepturi voluptatum, asperiores dolorum, magni tempore illo incidunt! Deleniti voluptate laborum in commodi dignissimos veniam id ipsa ullam. Suscipit, vel. Accusantium perspiciatis consequuntur molestiae amet, ipsum quibusdam, culpa odio sed dolore, aut veniam suscipit? Vero ullam quas rerum ut minima tempora iusto eaque id omnis, necessitatibus qui placeat consequatur numquam autem, eius dignissimos corrupti iste. Fugit veritatis repellat distinctio perspiciatis optio dolorem incidunt adipisci, minus sed aspernatur.</div>
+        <div class="card">CARD-3</div>
+    </div>
+</body>
+</html>
+
